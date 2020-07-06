@@ -9,6 +9,8 @@
       "jasmine",
       "jasminewd2",
       "node"
-    ]
+    ],
+    "rootDir": "./src",
+    "experimentalDecorators": true
   }
 }

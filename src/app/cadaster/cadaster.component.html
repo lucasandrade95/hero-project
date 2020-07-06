@@ -1,0 +1,32 @@
+<h2 class="text-center">Cadastro de Aniversariante</h2>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4 col-md-offset-5">
+    <div class="jumbotron">
+      <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" >
+
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" formControlName="name" autocomplete="off" class="form-control input-sm" placeholder="Nome do Aniversariante">
+        </div>
+        <div class="form-group">
+          <label for="date">Data</label>
+          <input class="form-control input-sm" type="date" id="date" formControlName="date" autocomplete="off" placeholder="Data">
+        </div>
+        <div class="form-group">
+          <label for="address">Endereço</label>
+          <input type="text" id="address" formControlName="address" autocomplete="off" class="form-control input-sm" placeholder="Endereço de Entrega">
+        </div>
+        <div class="form-group">
+          <label for="birthday">Presente</label>
+          <input type="text" id="birthday" formControlName="message" autocomplete="off" class="form-control input-sm" placeholder="Descreva seu presente">
+        </div>
+
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-5">
+  </div>
+</div>
